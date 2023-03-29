@@ -1,0 +1,144 @@
+body{
+  background-image: url("/assets/background.png");
+  background-repeat: no-repeat;
+  background-size:  contain;
+  background-position: top;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows:auto 30% 50% 30% auto;
+  width: 100vw;
+  row-gap: 10%;
+}
+
+header{
+  grid-row: 1/2;
+  grid-column: 1/4;
+}
+
+#banner, #apresentacao, #blocos{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+#apresentacao{
+  grid-row: 2/3;
+  grid-column: 1/4;
+}
+
+#title{
+  font-size: calc(.7em + 3vw);
+  color: var(--cor-tercearia);
+}
+
+#text{
+  font-size: calc(.3em + 1.5vw);
+  color: var(--cor-tercearia);
+}
+
+button{
+  background-color: var(--cor-secundaria);
+  color: var(--cor-tercearia);
+  border: none;
+  text-align: center;
+  width: 9vw;
+  font-size: calc(.3em + 1.2vw);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+button:hover{
+  background-color: var(--cor-tercearia);
+  color: var(--cor-secundaria);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#blocos{
+  display: flex;
+  justify-content: space-between;
+  grid-row: 3/4;
+  grid-column: 1/4;
+}
+
+.bloco{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  font-size: calc(.3em + 1.3vw);
+  color: var(--cor-tercearia);
+  text-align: center;
+  transition: .3s;
+  width: 28vw;
+}
+
+.bloco_img{
+  width: 50%;
+}
+
+#bloco_img_1{
+  width: 90%;
+}
+
+#banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-tercearia);
+  font-size: calc(.25em + 1.05vw);
+  grid-row: 4/5;
+  grid-column: 1/4;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.banner_div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#banner_div_2{
+  flex-direction: column;
+}
+
+#planos{
+  background-color: var(--cor-tercearia);
+  color: var(--cor-secundaria);
+}
+
+#planos:hover{
+  background-color: var(--cor-secundaria);
+  color: var(--cor-tercearia);
+}
+
+.banner_img{
+  width: 40%;
+}
+
+.banner_img_2{
+  width: 70%;
+}
+
+.banner_p{
+  text-align: center;
+}
+
+footer{
+  grid-row: 5/6;
+  grid-column: 1/4;
+}
+
+@media screen and (max-width:500px) {
+  #blocos{
+    font-size: calc(.5em + 1vw);
+  }
+  #banner{
+    font-size: calc(.16em + 1vw);
+  }
+}

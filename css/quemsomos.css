@@ -1,0 +1,25 @@
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+#blocos{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bloco{
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  width: 22%;
+  font-size: calc(.3em + 1.5vw);
+  padding: 1vw;
+  color: var(--cor-tercearia);
+}
+
+.img{
+  width: 40%;
+}
